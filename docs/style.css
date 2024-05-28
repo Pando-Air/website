@@ -1,19 +1,19 @@
-.main{
+.main {
     width: 100vw;
     height: 100vh;
-    background-image: url(budapest-skyline.jpg);
+    background-image: url("budapest-skyline.jpg");
     background-repeat: no-repeat;
 }
 
-h2{
+h2 { 
     color: white;
     font-size: 42px;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 0px 3px 5px rgba(0,0,0,0.35);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35);
 }
 
-.ticket-purchase{
+.ticket-purchase {
     background-color: white;
     border-radius: 15px;
     width: 750px;
