@@ -6,14 +6,161 @@
     <title>A Pando Air hivatalos weboldala | Közvetlen foglalás a legprémiumabb utazásért</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/images/pa1ntr.png" type="image/x-icon">
 </head>
 <body>
     <div class="main">
-        <h2>Hova utazzunk ma?</h2>
+        <h2>Hova utazzunk?</h2>
         <div class="ticket-purchase">
-            purchase
+            <div class="btn-group trip" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-warning" for="btnradio1">Egyirányú</label>
+                  
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-warning" for="btnradio2">Oda-Vissza</label>
+            </div><br>
+
+            <div class="flights">
+                <div class="input-group flex-nowrap w-50">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M2.5,19 L21.5,19 L21.5,21 L2.5,21 L2.5,19 Z M22.07,9.64 C21.86,8.84 21.03,8.36 20.23,8.58 L14.92,10 L8.02,3.57 L6.09,4.08 L10.23,11.25 L5.26,12.58 L3.29,11.04 L1.84,11.43 L3.66,14.59 L4.43,15.92 L6.03,15.49 L11.34,14.07 L15.69,12.91 L21,11.49 C21.81,11.26 22.28,10.44 22.07,9.64 Z" id="path-1"></path>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Kiindulás" aria-label="Kiindulás" aria-describedby="addon-wrapping" list="airports">
+                </div>
+                
+                <div class="input-group flex-nowrap w-50">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M2.5,19 L21.5,19 L21.5,21 L2.5,21 L2.5,19 Z M9.68,13.27 L14.03,14.43 L19.34,15.85 C20.14,16.06 20.96,15.59 21.18,14.79 C21.39,13.99 20.92,13.17 20.12,12.95 L14.81,11.53 L12.05,2.51 L10.12,2 L10.12,10.28 L5.15,8.95 L4.22,6.63 L2.77,6.24 L2.77,11.41 L4.37,11.84 L9.68,13.27 Z" id="path-1"></path>
+                            </svg>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Úticél" aria-label="Úticél" aria-describedby="addon-wrapping" list="airports">
+                </div>
+            </div>
+            
         </div>
+
+        
     </div>
+    
+
+
+    <div style="margin-bottom: 4444px;"></div>
+
+    <datalist id="airports">
+        <option value="ATL - Hartsfield-Jackson Atlanta International Airport" data-apcode="ATL">
+        <option value="PEK - Beijing Capital International Airport" data-apcode="PEK">
+        <option value="DXB - Dubai International Airport" data-apcode="DXB">
+        <option value="LAX - Los Angeles International Airport" data-apcode="LAX">
+        <option value="HND - Tokyo Haneda Airport" data-apcode="HND">
+        <option value="ORD - O'Hare International Airport" data-apcode="ORD">
+        <option value="LHR - London Heathrow Airport" data-apcode="LHR">
+        <option value="HKG - Hong Kong International Airport" data-apcode="HKG">
+        <option value="PVG - Shanghai Pudong International Airport" data-apcode="PVG">
+        <option value="CDG - Charles de Gaulle Airport" data-apcode="CDG">
+        <option value="DFW - Dallas/Fort Worth International Airport" data-apcode="DFW">
+        <option value="AMS - Amsterdam Schiphol Airport" data-apcode="AMS">
+        <option value="CAN - Guangzhou Baiyun International Airport" data-apcode="CAN">
+        <option value="SIN - Singapore Changi Airport" data-apcode="SIN">
+        <option value="ICN - Seoul Incheon International Airport" data-apcode="ICN">
+        <option value="DEN - Denver International Airport" data-apcode="DEN">
+        <option value="BKK - Suvarnabhumi Airport" data-apcode="BKK">
+        <option value="JFK - John F. Kennedy International Airport" data-apcode="JFK">
+        <option value="KUL - Kuala Lumpur International Airport" data-apcode="KUL">
+        <option value="MAD - Adolfo Suárez Madrid–Barajas Airport" data-apcode="MAD">
+        <option value="SFO - San Francisco International Airport" data-apcode="SFO">
+        <option value="BCN - Josep Tarradellas Barcelona–El Prat Airport" data-apcode="BCN">
+        <option value="MIA - Miami International Airport" data-apcode="MIA">
+        <option value="SEA - Seattle–Tacoma International Airport" data-apcode="SEA">
+        <option value="MUC - Munich Airport" data-apcode="MUC">
+        <option value="SYD - Sydney Kingsford Smith Airport" data-apcode="SYD">
+        <option value="LGW - London Gatwick Airport" data-apcode="LGW">
+        <option value="IAH - George Bush Intercontinental Airport" data-apcode="IAH">
+        <option value="FCO - Leonardo da Vinci–Fiumicino Airport" data-apcode="FCO">
+        <option value="PHX - Phoenix Sky Harbor International Airport" data-apcode="PHX">
+        <option value="MCO - Orlando International Airport" data-apcode="MCO">
+        <option value="GRU - São Paulo–Guarulhos International Airport" data-apcode="GRU">
+        <option value="YYZ - Toronto Pearson International Airport" data-apcode="YYZ">
+        <option value="BOM - Chhatrapati Shivaji Maharaj International Airport" data-apcode="BOM">
+        <option value="EWR - Newark Liberty International Airport" data-apcode="EWR">
+        <option value="DME - Domodedovo International Airport" data-apcode="DME">
+        <option value="MEX - Mexico City International Airport" data-apcode="MEX">
+        <option value="ZRH - Zurich Airport" data-apcode="ZRH">
+        <option value="SHA - Shanghai Hongqiao International Airport" data-apcode="SHA">
+        <option value="SZX - Shenzhen Bao'an International Airport" data-apcode="SZX">
+        <option value="CLT - Charlotte Douglas International Airport" data-apcode="CLT">
+        <option value="LIM - Jorge Chávez International Airport" data-apcode="LIM">
+        <option value="GVA - Geneva Airport" data-apcode="GVA">
+        <option value="CPH - Copenhagen Airport" data-apcode="CPH">
+        <option value="DEL - Indira Gandhi International Airport" data-apcode="DEL">
+        <option value="HGH - Hangzhou Xiaoshan International Airport" data-apcode="HGH">
+        <option value="DUB - Dublin Airport" data-apcode="DUB">
+        <option value="BNE - Brisbane Airport" data-apcode="BNE">
+        <option value="MAN - Manchester Airport" data-apcode="MAN">
+        <option value="BKK - Bangkok Don Mueang International Airport" data-apcode="DMK">
+        <option value="KIX - Kansai International Airport" data-apcode="KIX">
+        <option value="NRT - Narita International Airport" data-apcode="NRT">
+        <option value="SLC - Salt Lake City International Airport" data-apcode="SLC">
+        <option value="HNL - Daniel K. Inouye International Airport" data-apcode="HNL">
+        <option value="MEL - Melbourne Airport" data-apcode="MEL">
+        <option value="VIE - Vienna International Airport" data-apcode="VIE">
+        <option value="BOS - Logan International Airport" data-apcode="BOS">
+        <option value="CPT - Cape Town International Airport" data-apcode="CPT">
+        <option value="OSL - Oslo Gardermoen Airport" data-apcode="OSL">
+        <option value="JNB - O. R. Tambo International Airport" data-apcode="JNB">
+        <option value="LGA - LaGuardia Airport" data-apcode="LGA">
+        <option value="LIS - Humberto Delgado Airport" data-apcode="LIS">
+        <option value="DUS - Düsseldorf Airport" data-apcode="DUS">
+        <option value="HEL - Helsinki-Vantaa Airport" data-apcode="HEL">
+        <option value="GIG - Rio de Janeiro/Galeão International Airport" data-apcode="GIG">
+        <option value="BWI - Baltimore/Washington International Thurgood Marshall Airport" data-apcode="BWI">
+        <option value="PMI - Palma de Mallorca Airport" data-apcode="PMI">
+        <option value="FLL - Fort Lauderdale–Hollywood International Airport" data-apcode="FLL">
+        <option value="TPE - Taiwan Taoyuan International Airport" data-apcode="TPE">
+        <option value="CUN - Cancún International Airport" data-apcode="CUN">
+        <option value="AKL - Auckland Airport" data-apcode="AKL">
+        <option value="PRG - Václav Havel Airport Prague" data-apcode="PRG">
+        <option value="VCE - Venice Marco Polo Airport" data-apcode="VCE">
+        <option value="DCA - Ronald Reagan Washington National Airport" data-apcode="DCA">
+        <option value="ARN - Stockholm Arlanda Airport" data-apcode="ARN">
+        <option value="JED - King Abdulaziz International Airport" data-apcode="JED">
+        <option value="SJU - Luis Muñoz Marín International Airport" data-apcode="SJU">
+        <option value="FUK - Fukuoka Airport" data-apcode="FUK">
+        <option value="TSA - Taipei Songshan Airport" data-apcode="TSA">
+        <option value="HAN - Noi Bai International Airport" data-apcode="HAN">
+        <option value="SGN - Tan Son Nhat International Airport" data-apcode="SGN">
+        <option value="SVO - Sheremetyevo International Airport" data-apcode="SVO">
+        <option value="EZE - Ministro Pistarini International Airport" data-apcode="EZE">
+        <option value="MNL - Ninoy Aquino International Airport" data-apcode="MNL">
+        <option value="KUL - Kuala Lumpur International Airport" data-apcode="KUL">
+        <option value="BUD - Budapest Ferenc Liszt International Airport" data-apcode="BUD">
+        <option value="CAI - Cairo International Airport" data-apcode="CAI">
+        <option value="IST - Istanbul Airport" data-apcode="IST">
+        <option value="HOU - William P. Hobby Airport" data-apcode="HOU">
+        <option value="KBP - Boryspil International Airport" data-apcode="KBP">
+        <option value="SVO - Sheremetyevo International Airport" data-apcode="SVO">
+        <option value="TXL - Berlin Tegel Airport" data-apcode="TXL">
+        <option value="FCO - Leonardo da Vinci–Fiumicino Airport" data-apcode="FCO">
+        <option value="DOH - Hamad International Airport" data-apcode="DOH">
+        <option value="JNB - O. R. Tambo International Airport" data-apcode="JNB">
+        <option value="IAD - Washington Dulles International Airport" data-apcode="IAD">
+        <option value="ICN - Incheon International Airport" data-apcode="ICN">
+        <option value="MSP - Minneapolis–Saint Paul International Airport" data-apcode="MSP">
+        <option value="SAN - San Diego International Airport" data-apcode="SAN">
+        <option value="ZRH - Zurich Airport" data-apcode="ZRH">
+        <option value="VIE - Vienna International Airport" data-apcode="VIE">
+        <option value="SCL - Comodoro Arturo Merino Benítez International Airport" data-apcode="SCL">
+        <option value="GDL - Guadalajara International Airport" data-apcode="GDL">
+        <option value="YYC - Calgary International Airport" data-apcode="YYC">
+        <option value="TPE - Taiwan Taoyuan International Airport" data-apcode="TPE">
+        <option value="TUN - Tunis–Carthage International Airport" data-apcode="TUN">
+        <option value="SFO - San Francisco International Airport" data-apcode="SFO">
+        <option value="HKT - Phuket International Airport" data-apcode="HKT">
+        <option value="JED - King Abdulaziz International Airport" data-apcode="JED">
+        <option value="MXP - Milano Malpensa International Airport" data-apcode="MXP">
+        <option value="FRA - Frankfurt Airport" data-apcode="FRA"></option>
+    </datalist>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</html>

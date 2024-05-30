@@ -1,25 +1,56 @@
-.main {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("budapest-skyline.jpg");
+::selection {
+    background-color: rgba(255, 255, 255, 0.588);
+    color: rgb(48, 48, 48);
+}
+
+input::selection {
+    background-color: rgb(255, 197, 89);
+}
+
+body {
+    background-image: url("src/images/bg2.png");
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -12em;
 }
 
 h2 { 
     color: white;
-    font-size: 42px;
-    margin: 0;
+    font-size: 52px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.35);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.374);
+    font-weight: 550;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2.5px;
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
 }
 
 .ticket-purchase {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.458);
     border-radius: 15px;
     width: 750px;
-    height: 150px;
-    float: right;
-    margin-right: 15vw;
-    font-size: larger;
+    height: 250px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(25px);
+}
+
+.trip {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.trip label {
+    color: black;
+}
+
+.flights .input-group {
+    float: left;
+    padding: 20px;
 }
